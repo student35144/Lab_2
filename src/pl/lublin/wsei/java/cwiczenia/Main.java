@@ -7,7 +7,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        zad1();
+        System.out.printf(StringFun.decamelize("adamNowakMaKota"));
     }
 
     public static void zad1()

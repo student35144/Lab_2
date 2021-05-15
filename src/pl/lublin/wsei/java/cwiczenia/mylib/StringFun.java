@@ -62,4 +62,18 @@ public class StringFun
         }
         return newText;
     }
+
+    public static String decamelize(String passText)
+    {
+        String newWord = "";
+        for (int i=0; i<passText.length(); i++)
+        {
+            if(Character.isUpperCase(passText.charAt(i)))
+            {
+                newWord = newWord + " ";
+            }
+            newWord += Character.toLowerCase(passText.charAt(i));
+        }
+        return newWord;
+    }
 }
