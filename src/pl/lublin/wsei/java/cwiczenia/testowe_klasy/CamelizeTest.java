@@ -11,10 +11,10 @@ public class CamelizeTest
 
         do {
             System.out.printf("\nPodaj tekst do przerobienia (0 aby zakończyć): ");
-            String tekst = scn.next();
+            String tekst = scn.nextLine();
             if (tekst.equals("0")) break;
 
-            //
+            System.out.printf(StringFun.camelize(tekst));
         } while (true);
     }
 }

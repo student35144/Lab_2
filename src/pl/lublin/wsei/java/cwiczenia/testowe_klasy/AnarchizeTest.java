@@ -14,7 +14,7 @@ public class AnarchizeTest
             String tekst = scn.next();
             if (tekst.equals("0")) break;
 
-            System.out.printf(StringFun.anarchize(tekst));
+            System.out.print(StringFun.anarchize(tekst));
         } while (true);
     }
 }
