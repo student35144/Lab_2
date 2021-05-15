@@ -1,6 +1,7 @@
 package pl.lublin.wsei.java.cwiczenia;
 
 import pl.lublin.wsei.java.cwiczenia.mylib.Account;
+import pl.lublin.wsei.java.cwiczenia.mylib.StringFun;
 
 public class Main
 {
@@ -19,5 +20,7 @@ public class Main
         System.out.printf("%s%n",Account.capitalize("kamil adamski"));
         System.out.printf("%s%n",Account.translit("Adam Nowak"));
         System.out.printf("%s%n",Account.translit("Michał Czaja"));
+        System.out.printf("%s%n",Account.translit("Seweryn Krajewski"));
+        System.out.printf("%s%n",Account.translit("Nataniel Kawalec"));
     }
 }
