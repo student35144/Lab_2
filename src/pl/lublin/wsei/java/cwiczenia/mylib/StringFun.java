@@ -76,4 +76,24 @@ public class StringFun
         }
         return newWord;
     }
+
+    public static boolean isPalindrome(String passText)
+    {
+        boolean check = false;
+
+        if (passText.isEmpty())
+            return false;
+
+        passText = passText.toLowerCase();
+        passText = passText.replaceAll("\\s+","");
+
+        for (int i=0; i<passText.length()/2;i++)
+        {
+            if (passText.charAt(i) == passText.charAt(passText.length()-1-i))
+                check = true;
+            else
+                check = false;
+        }
+        return check;
+    }
 }
