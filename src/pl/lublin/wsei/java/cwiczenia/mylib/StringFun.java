@@ -1,6 +1,8 @@
 package pl.lublin.wsei.java.cwiczenia.mylib;
 
 import java.util.Locale;
+import java.util.Random;
+
 import org.apache.commons.lang3.StringUtils;
 
 public class StringFun
@@ -96,4 +98,20 @@ public class StringFun
         }
         return check;
     }
+
+    public static String shuffle(String passText)
+    {
+        String newText = "";
+        Random rand = new Random();
+
+        for(int i=0; i<passText.length(); i=i)
+        {
+            Integer range = rand.nextInt(passText.length());
+            newText += passText.substring(range,range+1);
+            passText = passText.substring(0,range) + passText.substring(range+1,passText.length());
+        }
+        return newText;
+    }
+
+
 }
